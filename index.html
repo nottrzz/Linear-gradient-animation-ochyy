@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="Deface by Rzmhr.">
+    <title>Linear gradient animation | html, css</title>
+    <!-- my font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ewert&display=swap" rel="stylesheet">
+    <!-- my style -->
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            background:linear-gradient(-36deg,black,black,black ,rgb(20, 37, 20) 50%,rgb(17, 25, 48),black,black,black) ;
+            height: 100vh;
+            width: 100%;
+            display: grid;
+            place-items: center;
+            background-size: 400% 300%;
+            animation: bg 10s ease infinite;
+        }
+        /* animation bg  */
+        @keyframes bg{
+            0%{
+                background-position: 0%;
+            }
+            50%{
+                background-position: 100%;
+            }
+            100%{
+                background-position: 0%;
+            } 
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <div class="container">
+    </div>
+    </center>
+</body>
+</html>
